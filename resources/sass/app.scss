@@ -6,3 +6,15 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Flash Messages
+@import '~vue-flash-message/dist/vue-flash-message.min.css';
+
+.form-error {
+    color: red;
+    font-size: smaller;
+}
+
+.has-error {
+    border-color: red;
+}

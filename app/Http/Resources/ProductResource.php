@@ -19,7 +19,8 @@ class ProductResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'manufactured_year' => $this->manufactured_year,
-            'photo' => Storage::url($this->photo)
+            'photo' => Storage::url($this->photo),
+            'created_at' => $this->created_at->format('Y-m-d H:i')
         ];
     }
 }
